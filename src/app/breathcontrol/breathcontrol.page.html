@@ -1,0 +1,53 @@
+<ion-header padding="true" class="ion-no-padding">
+  <ion-toolbar color=dark >    
+      <img object-fit: cover src="../assets/h&f/sw-stroke.png">    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+
+  <ion-row color="dark"> 
+    <ion-col size="12">
+          <ion-card *ngFor="let article of articles" color="success" style="width: 100%; margin: auto;">
+          <ion-card-content>
+            <div class="img-wrapper" >
+              <h1 class="h1"> "{{article.title}}" </h1>
+              <br>
+              <ion-img style="width: 100%;"src="assets/images/strokes/breaststroke.jpg"></ion-img>
+              <br>              
+              <p> {{article.desc1}} </p>
+              <br>
+              <p> {{article.desc2}} </p>
+              <br>
+              <p> {{article.desc3}} </p>
+              <br>
+              <i> <b> Credits to: </b> {{article.credit}} </i>
+            </div>
+          </ion-card-content>
+
+          <ion-toolbar lines="true" color="dark">
+            <ion-buttons slot="start"> 
+              <ion-back-button defaultHref="/"  color="success"> 
+              <ion-icon size="large"> </ion-icon>
+              </ion-back-button> 
+              </ion-buttons>
+                <ion-label color="success"> <!-- Click to Return --> </ion-label>
+          </ion-toolbar>
+        </ion-card>   
+  </ion-col> 
+</ion-row>
+</ion-content>
+
+
+
+  <ion-footer>
+    <ion-toolbar color=dark>
+      <ion-tabs>
+        <ion-tab-bar color=dark>
+            <ion-img src="assets/h&f/sw-mini.png" style="width: 100%; margin: auto;"></ion-img>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
+
+  

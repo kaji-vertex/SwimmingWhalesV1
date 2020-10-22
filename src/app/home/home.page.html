@@ -1,0 +1,64 @@
+<ion-header class="ion-no-border" padding="true">
+    <img object-fit: cover src="../assets/h&f/sw-banner-lg.png">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="end">
+      <ion-button (click)="presentHalfModal()" color="success">
+        <ion-icon name="menu-outline" size="large"></ion-icon>
+      </ion-button>
+      <ion-button (click)="refreshPage()" color="medium">
+        <ion-icon name="repeat-outline" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="titles" color=dark>
+      <h6 style="margin-left: 15px;">
+        <i> We swim because we are too sexy for a sport that requires clothes... </i>
+      </h6>
+    </div>    
+  </ion-toolbar>
+
+  <ion-toolbar color=dark>
+    <ion-searchbar size="small"color="medium" class="ion-no-padding" placeholder="Search title by keyword" (ionInput)="filterProductData($event)"></ion-searchbar>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content lines="full" color="dark">
+  <div color="dark">
+    <ion-col size="12" style="width: 100%; margin:auto; padding:0%;"></ion-col>     
+
+    <ion-card color="success" *ngFor="let guideline of guidelines" (click)="viewDetailsGuide(guideline)">
+      <ion-button style="float: right;" color="light" size="large">
+        <ion-icon name="caret-forward" size="large"></ion-icon>
+      </ion-button>
+    
+      <ion-card-content>
+        
+        <ion-row>
+          <ion-col size="12">
+            <ion-card-title>{{guideline.guideline_name}}</ion-card-title>
+            <ion-card-subtitle style="display: none;" class="ion-text-justify">
+            {{guideline.owner}}
+            </ion-card-subtitle>
+            
+          </ion-col>
+          <ion-col size="12" style="width: 100%; margin: auto; padding: 0%;">             
+          </ion-col>
+        </ion-row>
+
+      </ion-card-content>
+    </ion-card>
+   
+  </div>
+</ion-content>
+
+<!-- <FOOTER> -->
+  <ion-footer>
+    <ion-toolbar color=dark>
+      <ion-tabs>
+        <ion-tab-bar color=dark>
+          <ion-img src="assets/h&f/sw-mini.png" style="width: 100%; margin: auto;"></ion-img>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
+  
+

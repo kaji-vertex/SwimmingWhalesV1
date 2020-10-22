@@ -1,0 +1,7 @@
+{
+  "name": "swimming101",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

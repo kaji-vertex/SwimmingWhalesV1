@@ -1,0 +1,29 @@
+.bg {
+    --ion-background: #000000;
+}
+
+ion-header {
+    ion-toolbar {
+        ion-button {
+            padding-right: 7px;
+        }
+    }
+}
+
+
+ion-header {
+    background-color: #000000;
+}
+
+ion-content {
+    background-color: #222428;
+    ion-card-content {
+        p{
+            font-size: small;
+        }   
+    }
+    ion-list {
+        background-color: #222428;
+    }
+}
+

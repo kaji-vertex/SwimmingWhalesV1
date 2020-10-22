@@ -1,0 +1,72 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color=dark>
+    <ion-title size="small"> The thing about Swimming... and STROKES! </ion-title>
+    <ion-button slot="end" (click)="closeModal()" color="danger">
+      <ion-icon name="close-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+  
+  
+</ion-header>
+
+
+<ion-content color="dark" class="ion-no-border">
+  <ion-card color="success">
+    <ion-card-content>
+      <p>Swimming offers tremendous fitness benefits. The Centers for Disease Control and Prevention says that just 2.5 hours of swimming per week decreases the risk of chronic illnesses. Swimming improves mood and decreases anxiety, and the buoyancy of the water makes swimming a good choice for those with arthritis and other pain conditions. Even if you have no plans to become the next Michael Phelps, basic swimming skills are easy to learn. </p>
+      <br>
+      <p> Here are some of the basic STROKES in swimming. </p>
+    </ion-card-content>
+    
+  </ion-card>  
+      <ion-list lines="full">
+
+        <ion-card>
+          <ion-item (click)="waterComfort()" color="success">
+            <ion-label> FREESTYLE </ion-label>
+            <ion-icon name="caret-forward" size="large" color="dark"></ion-icon> 
+          </ion-item>
+        </ion-card>
+      
+      <ion-card>
+        <ion-item (click)="breathControl()" color="success">          
+          <ion-label> BREASTSTROKE </ion-label>
+          <ion-icon slot="end" name="caret-forward" size="large" color="dark"></ion-icon> 
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item (click)="floating()" color="success">
+          <ion-label> BUTTERFLY </ion-label>
+          <ion-icon slot="end" name="caret-forward" size="large" color="dark"></ion-icon> 
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item (click)="kicking()" color="success">
+          <ion-label> BACKSTROKE </ion-label>
+          <ion-icon slot="end" name="caret-forward" size="large" color="dark"></ion-icon> 
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item (click)="strokes()" color="success">
+          <ion-label> SIDESTROKE </ion-label>
+          <ion-icon slot="end" name="caret-forward" size="large" color="dark"></ion-icon> 
+        </ion-item>
+      </ion-card>
+
+      </ion-list>
+
+</ion-content>
+
+<!-- <FOOTER> -->
+  <ion-footer>
+    <ion-toolbar color=dark>
+      <ion-tabs>
+        <ion-tab-bar color=dark>
+          <ion-img src="assets/h&f/sw-mini.png" style="width: 100%; margin: auto;"></ion-img>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
